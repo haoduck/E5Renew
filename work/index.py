@@ -7,9 +7,9 @@ import json,sys,time
 #mail:  Mail.Read、Mail.ReadWrite、MailboxSettings.Read、MailboxSettings.ReadWrite
 #注册后一定要再点代表xxx授予管理员同意,否则outlook api无法调用
 
-id_path=sys.path[0]+r'/id.txt'
-secret_path=sys.path[0]+r'/secret.txt'
-refresh_token_path=sys.path[0]+r'/refresh_token.txt'
+id_path=sys.path[0]+r'/config/id.txt'
+secret_path=sys.path[0]+r'/config/secret.txt'
+refresh_token_path=sys.path[0]+r'/config/refresh_token.txt'
 num1 = 0
 
 try:

@@ -6,9 +6,9 @@ write(){
         echo $value > $file
     fi
 }
-write /work/id.txt $id
-write /work/secret.txt $secret
-write /work/refresh_token.txt $refresh_token
+write /work/config/id.txt $id
+write /work/config/secret.txt $secret
+write /work/config/refresh_token.txt $refresh_token
 write /work/crontab.log ""
 
 python /work/index.py
