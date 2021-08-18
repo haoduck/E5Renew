@@ -12,4 +12,4 @@ ENV id="your id"
 ENV secret="your secret"
 ENV refresh_token="your refresh_token"
 
-CMD /work/start.sh
+CMD crond && /work/start.sh
