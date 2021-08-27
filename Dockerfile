@@ -4,7 +4,8 @@ LABEL maintainer="aoao p@eng.cx"
 
 ADD work /work
 WORKDIR /work
-RUN pip install requests \
+RUN mkdir -p /work/config \
+    && pip install requests \
     && chmod +x crontab.sh start.sh \
     && echo "6 */6 * * * /work/crontab.sh >> /work/crontab.log" >> /etc/crontabs/root
 
